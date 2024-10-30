@@ -1,0 +1,74 @@
+body{
+  font-size: Arial;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(231, 231, 231);
+}
+/*selector por etiqueta header*/
+header{
+  box-shadow: 0 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+/*selector combinado descendente*/
+header .logo img{
+  height: 95px;
+}
+/*selector combinado descendente*/
+/*creando el hader, logo, img y ul*/
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+nav{
+  max-height: 900px;
+  margin: auto;
+  background-color: #333;
+  font-size: 15px;
+  margin-top: auto;
+}
+.menu-horizontal{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+
+}
+.menu-horizontal li a{
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: white  ;
+}
+.menu-horizontal li:hover{
+  background-color: red;
+}
+.menu-vertical{
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: rgba(0, 0 ,0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+  display: block;
+}
+.menu-vertical li:hover{
+  background-color: black;
+}
+.menu-vertical li a{
+  display: block;
+  color: white;
+  padding: 10px 10px 10px 20px;
+}
+/*selector combinado descendente*/
+/*ordenando el menu*/
+
+/*agregando hover al menu*/
+nav ul li a:hover{
+  text-decoration: underline red;
+}
